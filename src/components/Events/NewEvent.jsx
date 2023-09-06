@@ -20,7 +20,6 @@ export default function NewEvent() {
   return (
     <Modal onClose={() => navigate("../")}>
       <EventForm onSubmit={handleSubmit}>
-        {" "}
         {isPending && "Submitting..."}
         {!isPending && (
           <>
